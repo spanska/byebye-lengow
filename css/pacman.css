@@ -329,6 +329,33 @@ h3 {
     font-size: 26px;
 }
 
+#goodbye {
+    position: absolute;
+    width: 420px;
+    height: 285px;
+    top: 290px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+    z-index: 999999;
+    background-color: #222;
+    border: solid 1px #193fff;
+    text-transform: uppercase;
+    opacity: 0.9;
+    display: none;
+    cursor: pointer;
+}
+
+#goodbye h2 {
+    margin: 0px 0px 10px 0px;
+    color: #d43b3b;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+}
+
 #help {
     position: absolute;
     width: 420px;

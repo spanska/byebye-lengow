@@ -109,10 +109,10 @@ function win() {
     stopTimes();
 
     eraseGhosts();
-
-    setTimeout("prepareNextLevel()", 1000);
+    $('#goodbye').fadeIn("slow");
 
 }
+
 function prepareNextLevel(i) {
     if (LEVEL_NEXT_TIMER === -1) {
         eraseBoardDoor();
