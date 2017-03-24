@@ -176,7 +176,7 @@ function ready() {
 
 function retry() {
     LOCK = true;
-    message("on redemarre!");
+    message("sprint en retard!");
 
     playReadySound();
     setTimeout("go()", "4100");
@@ -294,7 +294,7 @@ function lifes(l) {
 
 function gameover() {
     GAMEOVER = true;
-    message("echec du print");
+    message("echec du sprint :(");
     stopTimes();
 
     erasePacman();
@@ -315,7 +315,7 @@ function gameover() {
 
 function message(m) {
     $("#message").html(m);
-    if (m === "echec du print") $("#message").addClass("red");
+    if (m === "echec du sprint :(") $("#message").addClass("red");
 }
 function clearMessage() {
     $("#message").html("");
