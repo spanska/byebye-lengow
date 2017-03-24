@@ -163,16 +163,26 @@ function retry() {
     TIME_LIFE = 0;
     TIME_FRUITS = 0;
 
-    ready();
+    retry();
 }
 
 function ready() {
     LOCK = true;
-    message("ready!");
+    message("debut du sprint!");
 
     playReadySound();
     setTimeout("go()", "4100");
 }
+
+function retry() {
+    LOCK = true;
+    message("on redemarre!");
+
+    playReadySound();
+    setTimeout("go()", "4100");
+}
+
+
 function go() {
     playSirenSound();
 
@@ -284,7 +294,7 @@ function lifes(l) {
 
 function gameover() {
     GAMEOVER = true;
-    message("game over");
+    message("echec du print");
     stopTimes();
 
     erasePacman();
@@ -305,7 +315,7 @@ function gameover() {
 
 function message(m) {
     $("#message").html(m);
-    if (m === "game over") $("#message").addClass("red");
+    if (m === "echec du print") $("#message").addClass("red");
 }
 function clearMessage() {
     $("#message").html("");

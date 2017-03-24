@@ -77,7 +77,7 @@ body {
 #message {
     position: absolute;
     display: inline;
-    top: 413px;
+    top: 416px;
     left: 180px;
     margin: 0px;
     padding: 0px;
@@ -86,7 +86,7 @@ body {
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff200;
     text-align: center;
 }
